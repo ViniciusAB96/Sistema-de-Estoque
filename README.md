@@ -1,5 +1,5 @@
-## Sistema-de-Estoque
-
+# Sistema-de-Estoque
+<em>Sistema para o gerenciamento do estoque de uma loja de roupa.</em>
 <h2>Objetivo</h2>
 <i>Projeto criado para composição da nota de N1 2°Bimestre.</i>
 

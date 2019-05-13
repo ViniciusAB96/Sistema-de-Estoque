@@ -6,7 +6,7 @@
 <h3>Tecnologias Utilizadas</h3>
 <ul>
 <li>Node Js</li>
-<li>AngularJs</li>
+<li>Angular2</li>
 <li>Mongo Db</li>
 <li>Express</li>
 </ul>

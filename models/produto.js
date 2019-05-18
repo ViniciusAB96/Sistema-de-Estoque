@@ -55,7 +55,7 @@ module.exports.getProdutoByID = function (id, callback){
 }
 
 module.exports.getAllProducts = function (id, callback){
-    Produto.find().sort({codigoItem: 'desc'}).then((produtos)=>{
+   /* Produto.find().sort({codigoItem: 'desc'}).then((produtos)=>{
         //console.log(produtos);
         
         return produtos;
@@ -63,6 +63,20 @@ module.exports.getAllProducts = function (id, callback){
     }).catch((error) => {
         return error;
     });
+*/
+/*    Produto.find({}, function(err, produtos) {
+        var productMap = {};
+    
+        produtos.forEach(function(produtos) {
+            productMap[produtos._id] = produtos;
+        });
+    
+        return {produtos:productMap};  
+      }).then(()=>{
+        return {produtos:productMap};  
+      }).catch(()=>{
+       return ({success:false, msg: 'Não foi possível realizar a seleção em todos os produtos.'});
+      });*/
 }
 
 module.exports.getProdutoBycodigoItem = function (codigoItem, callback){
@@ -73,4 +87,27 @@ module.exports.getProdutoBycodigoItem = function (codigoItem, callback){
 module.exports.addProduto = function(newProduto, callback){
     newProduto.save(callback); 
 }
+/*
+module.exports.alterarProduto = function(req){
+               
+    Produto.findOneAndUpdate({_id:req.body.id}, {$set:{
+        codigoItem: req.body.codigoItem,
+        dataEntrega: req.body.dataEntrega,
+        tipo: req.body.tipo,
+        marca: req.body.marca,
+        tamanho: req.body.tamanho,
+        cor: req.body.cor,
+        valorEtiquetaCompra: req.body.valorEtiquetaCompra,
+        valorPagoCompra: req.body.valorPagoCompra,
+        valorMargemMax: req.body.valorMargemMax,
+        precoSugerido: req.body.precoSugerido
+    }}).then(()=>{
+        console.log("Cadastro do  alterado com sucesso!");
+        return res.json({success: true, msg: "Produto alterado com sucesso"});
+    }).catch((err)=>{
+        console.log("Houve um erro ao tentar atualizar o produto:" + err); 
+        return res.json({success: false, msg: "houve um erro ao tentar alterar o produto"+err });
+    });
+}
 
+*/

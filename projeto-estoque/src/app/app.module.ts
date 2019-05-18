@@ -13,7 +13,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { ListagemEstoqueComponent } from './components/listagem-estoque/listagem-estoque.component';
 import { ProdutoComponent } from './components/produto/produto.component';
-import {ValidacaoComponent} from './services/validacao.service';
+//import {ValidacaoComponent} from './services/validacao.service';
 
 const appRoutes : Routes = [
   {path: '', component:HomeComponent},
@@ -45,7 +45,7 @@ const appRoutes : Routes = [
     HttpModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [ValidacaoComponent],
+  //providers: [ValidacaoComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

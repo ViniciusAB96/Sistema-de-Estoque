@@ -10,7 +10,7 @@
   <li>Mongo Db</li>
   <li>Express</li>
 </ul>
-<strong><em>Obs:</em></strong>
+<strong><em>Obs:</em></strong><br/>
 <strong>1º: </strong><p>Existem dois gitignore no projeto, sendo necessário utilizar o comando <b>npm install</b> tanto para o serviço que controla o backend (na raiz do projeto), como para front-end, no que diz respeito ao Angular 2 (pasta "projeto-estoque")</p>
 <strong>2º: </strong>
 

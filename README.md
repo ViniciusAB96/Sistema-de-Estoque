@@ -14,7 +14,8 @@
 <strong>1º: </strong><p>Existem dois gitignore no projeto, sendo necessário utilizar o comando <b>npm install</b> tanto para o serviço que controla o back-end (na raiz do projeto), como para front-end, no que diz respeito ao Angular 2, que se encontra na pasta "projeto-estoque".</p>
 <strong>2º: </strong>
 
-<p>O back-end da aplicação está realizando as funcionalidades assim como esperado, utilizando inclusive JWT em todas os métodos HTTP. Em relação ao front-end, ele ainda não está interligado com o back-end, mas o design de algumas telas já pode ser avaliado.</p>
+<p>O back-end da aplicação está realizando as funcionalidades assim como esperado, utilizando inclusive JWT em todos os métodos HTTP. 
+<br/>Em relação ao front-end, ele ainda não está interligado com o back-end, mas o design de algumas telas já pode ser avaliado.</p>
 
 <ul>
  <li>    
